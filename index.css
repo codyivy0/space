@@ -359,7 +359,8 @@ select {
     transition: transform 500ms ease-in-out;
   }
 
-  .primary-navigation[data-visible="true"] {
+  .primary-navigation[data-visible="true"],
+  .primary-navigation.open {
     transform: translateX(0);
   }
 
@@ -382,7 +383,8 @@ select {
     border: 0;
   }
 
-  .mobile-nav-toggle[aria-expanded="true"] {
+  .mobile-nav-toggle[aria-expanded="true"],
+  .mobile-nav-toggle.open {
     background-image: url(./assets/shared/icon-close.svg);
   }
 
